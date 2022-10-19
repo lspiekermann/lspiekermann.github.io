@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if !mso]><!-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+    
+  <style type="text/css">
+  /*@media (max-width: 780px) and (-webkit-min-device-pixel-ratio: 1) {*/
+    .card_holder {
+      height:917px;
+    }
+    .card_container {
+      height:917px;
+    }
+    /* entire container, keeps perspective */
+    .flip-container {
+      -webkit-perspective: 917px;
+      perspective: 917px;
+      z-index: 10;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+    }
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper {
+      transform: rotateY(-180deg);
+      -webkit-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+    }
+
+    /* flip speed goes here */
+    .flipper, .inside {
+      transition: 2s;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      position: relative;
+    }
+
+    /* hide back of pane during swap */
+    .front, .back {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /* front pane, placed above back */
+    .front {
+      background: white;
+      z-index: 10;
+      width:1300px;
+      height:917px;
+      padding:0px;
+      /* for firefox 31 */
+      transform: rotateX(0deg);
+    }
+
+    /* back, initially hidden pane */
+    .back {
+      z-index: 5;
+      width:1300px;
+      height:917px;
+      padding:0px;
+      transform: rotateX(180deg);
+      -webkit-transform: rotateX(180deg);
+    }
+
+    .inside {
+      z-index: -1;
+      width:1300px;
+      height:917px;
+      padding:0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      /* for firefox 31 */
+    }
+
+    .kinetic {
+      display:block !important;
+      max-height:none !important;
+      height:917px !important;
+      width:0px !important;
+      overflow:visible !important;
+    }
+  /*}*/
+  </style>
+  <!--<![endif]-->
+</head>
+<html style="Margin:0;padding:0;min-width:100%;background-color:#687756;">
+  <table class="card_holder" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;max-width: 1300px;margin:0 auto;">
+    <tr>
+      <td height="50"> <!-- This just adds a little padding above the card so that you can see how it opens out --></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <!-- START INTERACTIVE SECTION -->
+        <!--[if !mso]><!-->
+        <div class="card_container" style="position: relative;">
+          <div class="flip-container kinetic" style="mso-hide:all;display:none;max-height:0;overflow:hidden;text-align:center;width:100%;">
+            <div class="flipper">
+              <div class="front">
+                <img width="100%" src="https://www.dropbox.com/s/3wphz0q13zl8inz/Happy_Birthday.png?raw=1" style="max-width:1300px;"/>
+              </div>
+              <div class="back">
+                <img width="100%" src="https://www.emailonacid.com/images/blog_images/Emailology/2016/HolidayCard_InsideLeft.jpg" style="max-width:1300px;max-height:917px;" />
+              </div>
+              
+            </div>
+            <div class="inside" style="">
+              <img width="100%" height="917px" id="1" src="https://www.dropbox.com/s/c6ytx7gzfeevb4p/JJ_Birthday.png?raw=1">
+<!--              <img width=100 height=100 id="1" src="cid:Logo.jpg">-->
+            </div>
+          </div>
+        </div>
+        <!--<![endif]-->
+        <!-- END INTERACTIVE SECTION -->
+
+      </td>
+    </tr>
+  </table>
+<!-- ======= end hero article ======= -->                
+</html>
+</html>
